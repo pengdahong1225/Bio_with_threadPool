@@ -1,0 +1,12 @@
+Server_BIO ok
+
+ThreadPool 
+
+CTask    任务队列里放的是函数指针 
+
+1.创建线程(绑定work函数) ok
+2.从socket accept 添加fd到任务函数,任务函数添加到任务队列 ok
+3.线程自己去任务队列里领取任务(临界资源) ok
+4.关闭工作
+
+https://blog.csdn.net/M_Alan_walker/article/details/115386283
